@@ -1,18 +1,13 @@
 (* Exp4 : Byte stuffing (Data link layer) *)
-
 clc;
 clear;
-
 % ---------------- Input Data ----------------
 original_data = {'A','B','ESC','RITIK','ESC','EXT','KASHYAP','ESC','G','H','ESC','STX','F'};
-
-STX = 'STX';   % Start flag
-ETX = 'ETX';   % End flag
-
+STX = 'ESC STX';   % Start flag
+ETX = 'ESC ETX';   % End flag
 % ---------------- OUTPUT 1 ----------------
 disp('1) Original Data:');
 disp(original_data)
-
 % ---------------- Byte Stuffing ----------------
 stuffed_data = {};
 
@@ -24,7 +19,6 @@ for i = 1:length(original_data)
         stuffed_data{end+1} = original_data{i};
     end
 end
-
 % ---------------- OUTPUT 2 ----------------
 disp('2) Stuffed Data:');
 disp(stuffed_data)

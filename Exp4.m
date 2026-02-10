@@ -65,4 +65,27 @@ disp(destuffed_data)
 % ---------------- OUTPUT 6 ----------------
 disp('6) Original Data Recovered at Receiver:');
 disp(destuffed_data)
+disp("Ritik kashyap ")
+disp("E&TC A 67")
+
+(* output *)
+1) Original Data:
+    {'A','B','ESC','RITIK','ESC','EXT','KASHYAP','ESC','G','H','ESC','STX','F'}
+
+2) Stuffed Data:
+    {'A','B','ESC','ESC','RITIK','ESC','ESC','EXT','KASHYAP','ESC','ESC','G','H','ESC','ESC','STX','F'}
+
+3) Data With Flags:
+    {'STX','A','B','ESC','ESC','RITIK','ESC','ESC','EXT','KASHYAP','ESC','ESC','G','H','ESC','ESC','STX','F','ETX'}
+
+4) Data Without Flags:
+    {'A','B','ESC','ESC','RITIK','ESC','ESC','EXT','KASHYAP','ESC','ESC','G','H','ESC','ESC','STX','F'}
+
+5) Removed Stuffed Data at Receiver:
+    {'A','B','ESC','RITIK','ESC','EXT','KASHYAP','ESC','G','H','ESC','STX','F'}
+
+6) Original Data Recovered:
+    {'A','B','ESC','RITIK','ESC','EXT','KASHYAP','ESC','G','H','ESC','STX','F'}
+
+
 
